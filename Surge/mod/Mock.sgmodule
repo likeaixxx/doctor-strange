@@ -1,0 +1,9 @@
+#!name = Surge Mock Test
+#!desc = Surge 脚本测试
+#!author = Likeai
+
+[Script]
+Mock Test = type=http-response, pattern=^https?:\/\/tv\.likeai\.online\?(.*), requires-body=1, script-path=https://github.com/DualSubs/Spotify/releases/download/v1.9.9/request.bundle.js
+
+[MITM]
+hostname = %APPEND% *.likeai.online
