@@ -1,4 +1,4 @@
-#!MANAGED-CONFIG https://raw.githubusercontent.com/likeaixxx/doctor-strange/refs/heads/main/Surge/ip/cf-ip interval=300 strict=true
+#!MANAGED-CONFIG https://raw.githubusercontent.com/likeaixxx/doctor-strange/refs/heads/main/Surge/ip/cf-ip interval=43200 strict=true
 [General]
 
 [Host]
