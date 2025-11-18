@@ -2,7 +2,7 @@
 [General]
 
 [Host]
-vws.aiquan.fun = 104.17.89.124
+vws.aiquan.fun = 172.64.82.5
 
 [Rule]
 FINAL,DIRECT
