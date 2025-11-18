@@ -1,2 +1,6 @@
 /Surge/config/*
 /Loon/config/*
+/CloudflareSpeedTest
+/cfst_hosts_mac.sh
+/nowip_hosts.txt
+/result_hosts.txt
