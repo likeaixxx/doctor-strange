@@ -1,8 +1,0 @@
-#!MANAGED-CONFIG https://raw.githubusercontent.com/likeaixxx/doctor-strange/refs/heads/main/Surge/ip/cf-ip.dconf interval=21600 strict=true
-[Host]
-vws.aiquan.fun = 104.17.89.124
-
-[General]
-
-[Rule]
-FINAL,DIRECT
