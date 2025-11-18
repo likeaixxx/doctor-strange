@@ -3,6 +3,7 @@
 
 [Host]
 vws.aiquan.fun = 172.66.130.189
+vws1.aiquan.fun = 172.66.130.189
 
 [Rule]
 FINAL,DIRECT
