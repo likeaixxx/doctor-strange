@@ -1,0 +1,5 @@
+#!name = Loon cf best ip
+#!desc = cf 优选ip
+
+[Host]
+vws.aiquan.fun = 172.66.130.189
