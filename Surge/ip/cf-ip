@@ -2,9 +2,9 @@
 [General]
 
 [Host]
-vws.aiquan.fun = 104.17.211.73
-vws1.aiquan.fun = 104.17.211.73
-*.likeai.online = 104.17.211.73
+vws.aiquan.fun = 104.16.16.8
+vws1.aiquan.fun = 104.16.16.8
+*.likeai.online = 104.16.16.8
 
 [Rule]
 FINAL,DIRECT
