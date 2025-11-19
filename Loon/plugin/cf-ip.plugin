@@ -2,6 +2,6 @@
 #!desc = cf 优选ip
 
 [Host]
-vws.aiquan.fun = 104.17.18.254
-vws1.aiquan.fun = 104.17.18.254
-*.likeai.online = 104.17.18.254
+vws.aiquan.fun = 104.16.228.41
+vws1.aiquan.fun = 104.16.228.41
+*.likeai.online = 104.16.228.41
