@@ -2,14 +2,14 @@
 [General]
 
 [Host]
-vws.aiquan.fun = 104.29.125.188
-vws1.aiquan.fun = 104.29.125.188
-*.likeai.online = 104.29.125.188
-sendf.aiquan.fun = 104.29.125.188
-xui.aiquan.fun = 104.29.125.188
-a1.aiquan.fun = 104.29.125.188
-c1.aiquan.fun = 104.29.125.188
-x1.aiquan.fun = 104.29.125.188
+vws.aiquan.fun = 172.67.75.47
+vws1.aiquan.fun = 172.67.75.47
+*.likeai.online = 172.67.75.47
+sendf.aiquan.fun = 172.67.75.47
+xui.aiquan.fun = 172.67.75.47
+a1.aiquan.fun = 172.67.75.47
+c1.aiquan.fun = 172.67.75.47
+x1.aiquan.fun = 172.67.75.47
 
 [Rule]
 FINAL,DIRECT
