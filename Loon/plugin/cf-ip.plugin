@@ -2,13 +2,13 @@
 #!desc = cf 优选ip
 
 [Host]
-vws.aiquan.fun = 104.26.8.163
-vws1.aiquan.fun = 104.26.8.163
-*.likeai.online = 104.26.8.163
+vws.aiquan.fun = 162.159.160.124
+vws1.aiquan.fun = 162.159.160.124
+*.likeai.online = 162.159.160.124
 
-sendf.aiquan.fun = 104.26.8.163
-xui.aiquan.fun = 104.26.8.163
+sendf.aiquan.fun = 162.159.160.124
+xui.aiquan.fun = 162.159.160.124
 
-a1.aiquan.fun = 104.26.8.163
-c1.aiquan.fun = 104.26.8.163
-x1.aiquan.fun = 104.26.8.163
+a1.aiquan.fun = 162.159.160.124
+c1.aiquan.fun = 162.159.160.124
+x1.aiquan.fun = 162.159.160.124
