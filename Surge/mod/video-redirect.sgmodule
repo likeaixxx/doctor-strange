@@ -1,6 +1,6 @@
 #!name=视频流跳转
 #!desc=智能检测视频流并跳转到指定播放器
-#!arguments=PLAYER:vlc,FORMATS:m3u8|mp4|avi|mkv|flv|ts
+#!arguments=PLAYER:vidhub,FORMATS:m3u8|mp4|avi|mkv|flv|ts
 #!arguments-desc=PLAYER: 播放器类型(vlc/infuse/nplayer/avplayer/oplayer/iina)\nFORMATS: 支持的视频格式，用|分隔
 
 [Script]
