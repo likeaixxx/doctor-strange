@@ -14,9 +14,8 @@ const PLAYERS = {
 };
 
 // 获取参数
-const params = getParams($argument);
-const playerType = params.player || 'vidhub';
-const videoFormats = params.formats ? params.formats.split('|') : ['m3u8'];
+const playerType = 'vidhub';
+const videoFormats = 'm3u8|mp4|avi|mkv|flv|ts'.split('|');
 
 // 获取原始 URL
 let url = $request.url;
@@ -48,15 +47,3 @@ if (isVideo && PLAYERS[playerType]) {
  $done({});
 }
 
-// 解析参数函数
-function getParams(str) {
- if (!str) return {};
- const params = {};
- str.split('&').forEach(item => {
-  const [key, value] = item.split('=');
-  if (key && value) {
-   params[key] = decodeURIComponent(value);
-  }
- });
- return params;
-}
