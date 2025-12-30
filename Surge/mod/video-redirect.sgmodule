@@ -2,4 +2,4 @@
 #!desc=智能检测视频流并跳转到指定播放器
 
 [Script]
-video-redirect = type=http-request,pattern=^https?:\/\/.*\.(m3u8|mp4|avi|mkv|flv|ts),script-path=https://raw.githubusercontent.com/likeaixxx/doctor-strange/refs/heads/main/Surge/script/video-redirect.js
+video-redirect = type=http-request,pattern=^https?:\/\/.*\.(m3u8|mp4|avi|mkv|flv|ts),script-path=https://raw.githubusercontent.com/likeaixxx/doctor-strange/refs/heads/main/Surge/script/video-redirect-1.js
