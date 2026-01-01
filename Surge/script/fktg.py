@@ -26,5 +26,5 @@ line.append('FINAL,DIRECT')
 
 result = '\n'.join(lines)
 
-with open('FKTG', 'w', encoding='utf-8') as f:
+with open('fktg', 'w', encoding='utf-8') as f:
     f.write(result)
