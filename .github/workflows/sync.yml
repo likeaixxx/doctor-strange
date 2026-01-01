@@ -22,4 +22,3 @@ jobs:
           git add *.sgmodule
           git diff --quiet && git diff --staged --quiet || git commit -m "Auto sync"
           git push
-˝
