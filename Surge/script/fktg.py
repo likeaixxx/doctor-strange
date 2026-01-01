@@ -21,8 +21,8 @@ for line in content.split('\n'):
     elif line.strip() and not line.startswith('#!'):
         lines.append(line)
 
-line.append('[Rule]')
-line.append('FINAL,DIRECT')
+lines.append('[Rule]')
+lines.append('FINAL,DIRECT')
 
 result = '\n'.join(lines)
 
