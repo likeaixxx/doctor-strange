@@ -14,7 +14,7 @@ jobs:
         with:
           python-version: '3.x'
       - run: pip install requests
-      - run: python convert.py
+      - run: python Surge/script/fktg.py
       - run: |
           mv  *.sgmodule Surge/mod/
           git config user.name github-actions
