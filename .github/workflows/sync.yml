@@ -19,6 +19,6 @@ jobs:
           mv  FKTG.dconf Surge/ip/
           git config user.name github-actions
           git config user.email github-actions@github.com
-          git add *.sgmodule
+          git add Surge/ip/FKTG.dconf
           git diff --quiet && git diff --staged --quiet || git commit -m "Auto sync"
           git push
