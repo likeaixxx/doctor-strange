@@ -8,12 +8,13 @@ content = response.text
 
 # 提取元数据并去掉空格
 lines = []
-lines.append('[General]')
+# lines.append('[General]')
 for line in content.split('\n'):
     if line.startswith('#!'):
         pass
     elif line.strip() == '[Host]':
-        lines.append('\n[Host]')
+        # lines.append('\n[Host]')
+        pass
     elif '=' in line and 'use-in-proxy' in line:
         # 移除 Loon 特定参数
         cleaned = re.sub(r',\s*use-in-proxy=\w+', '', line)
@@ -21,8 +22,8 @@ for line in content.split('\n'):
     elif line.strip() and not line.startswith('#!'):
         lines.append(line)
 
-lines.append('[Rule]')
-lines.append('FINAL,DIRECT')
+# lines.append('[Rule]')
+# lines.append('FINAL,DIRECT')
 
 result = '\n'.join(lines)
 
