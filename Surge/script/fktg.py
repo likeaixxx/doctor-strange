@@ -8,6 +8,7 @@ content = response.text
 
 # 提取元数据并去掉空格
 lines = []
+lines.append('[General]')
 for line in content.split('\n'):
     if line.startswith('#!'):
         pass
@@ -20,7 +21,10 @@ for line in content.split('\n'):
     elif line.strip() and not line.startswith('#!'):
         lines.append(line)
 
+line.append('[Rule]')
+line.append('FINAL,DIRECT')
+
 result = '\n'.join(lines)
 
-with open('FKTG.dconf', 'w', encoding='utf-8') as f:
+with open('FKTG', 'w', encoding='utf-8') as f:
     f.write(result)
