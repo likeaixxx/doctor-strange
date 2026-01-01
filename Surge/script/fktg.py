@@ -10,7 +10,7 @@ content = response.text
 lines = []
 for line in content.split('\n'):
     if line.startswith('#!'):
-        lines.append(line.replace(' = ', '='))
+        pass
     elif line.strip() == '[Host]':
         lines.append('\n[Host]')
     elif '=' in line and 'use-in-proxy' in line:
@@ -22,5 +22,5 @@ for line in content.split('\n'):
 
 result = '\n'.join(lines)
 
-with open('FKTG.sgmodule', 'w', encoding='utf-8') as f:
+with open('FKTG.dconf', 'w', encoding='utf-8') as f:
     f.write(result)
