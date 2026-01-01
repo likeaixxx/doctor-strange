@@ -18,7 +18,7 @@ for line in content.split('\n'):
     elif '=' in line and 'use-in-proxy' in line:
         # 移除 Loon 特定参数
         cleaned = re.sub(r',\s*use-in-proxy=\w+', '', line)
-        lines.append(cleaned)
+        lines.append(cleaned.replace(' = ', ' '))
     elif line.strip() and not line.startswith('#!'):
         lines.append(line)
 
