@@ -4,7 +4,12 @@
 [Host]
 vws.aiquan.fun = 104.16.7.234
 vws1.aiquan.fun = 104.16.7.234
-*.likeai.online = 104.16.7.234
+
+bark.likeai.online = 104.16.7.234
+frp.likeai.online = 104.16.7.234
+lyrics.likeai.online = 104.16.7.234
+quark.likeai.online = 104.16.7.234
+xui.likeai.online = 104.16.7.234
 
 sendf.aiquan.fun = 104.16.7.234
 xui.aiquan.fun = 104.16.7.234
