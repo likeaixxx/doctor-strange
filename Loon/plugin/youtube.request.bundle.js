@@ -1,5 +1,5 @@
 const url = new URL($request.url);
-Console.info(`url: ${url.toJSON()}`);
+console.log(`url: ${url.toJSON()}`);
 async () => {
   // 创建空数据
   let body = {};
@@ -13,6 +13,6 @@ async () => {
     }
   }
   $request.url = url.toString();
-  Console.info(`$request.url: ${$request.url}`);
+  console.log(`$request.url: ${$request.url}`);
   done($request);
 };
