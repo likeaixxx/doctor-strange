@@ -1,4 +1,4 @@
-(function () {
+; (async () => {
   const req = $request;
 
   console.log(`[force-effort-max] hit url=${req.url}`);
