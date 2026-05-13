@@ -27,6 +27,13 @@
   }
 
   const headers = req.headers || {};
+  const UserAgent = headers["User-Agent"] || headers["user-agent"] || "";
+  if (!UserAgent.toLowerCase().includes("claude")) {
+    console.log("[force-effort-max] skip: no calude user-agent");
+    $done({});
+    return;
+  }
+  
   const contentType = headers["Content-Type"] || headers["content-type"] || "";
 
   console.log(`[force-effort-max] content-type=${contentType}`);
