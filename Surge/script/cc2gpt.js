@@ -58,6 +58,9 @@ Surge MITM script
         return;
     }
 
+    // 需要剔除后缀
+    data.model = model.replace(/-xhigh$/, "");
+
     if (!data.output_config || typeof data.output_config !== "object" || Array.isArray(data.output_config)) {
         data.output_config = {};
     }
