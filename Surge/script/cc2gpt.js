@@ -1,45 +1,44 @@
-/*
-Force output_config.effort=max for models ending with -xhigh
-Surge MITM script
-*/
-
 (function () {
   const req = $request;
 
+  console.log(`[force-effort-max] hit url=${req.url}`);
+  console.log(`[force-effort-max] method=${req.method}`);
+
   if (req.method !== "POST") {
+    console.log("[force-effort-max] skip: not POST");
     $done({});
     return;
   }
 
-  const url = req.url || "";
-  let path = "";
+  let pathname = "";
 
   try {
-    path = new URL(url).pathname;
-  } catch (_) {
+    pathname = new URL(req.url).pathname;
+  } catch (e) {
+    console.log(`[force-effort-max] skip: bad url ${e}`);
     $done({});
     return;
   }
 
-  if (!path.startsWith("/v1/messages")) {
+  if (!pathname.startsWith("/v1/messages")) {
+    console.log(`[force-effort-max] skip: path=${pathname}`);
     $done({});
     return;
   }
 
   const headers = req.headers || {};
-  const userAgent = headers["User-Agent"] || headers["user-agent"] || "";
-  if (!userAgent.toLowerCase().includes("claude")) {
-    $done({});
-    return;
-  }
-
   const contentType = headers["Content-Type"] || headers["content-type"] || "";
+
+  console.log(`[force-effort-max] content-type=${contentType}`);
+
   if (!String(contentType).toLowerCase().includes("application/json")) {
+    console.log("[force-effort-max] skip: not json");
     $done({});
     return;
   }
 
   if (!req.body) {
+    console.log("[force-effort-max] skip: empty body");
     $done({});
     return;
   }
@@ -48,7 +47,8 @@ Surge MITM script
 
   try {
     data = JSON.parse(req.body);
-  } catch (_) {
+  } catch (e) {
+    console.log(`[force-effort-max] skip: json parse failed ${e}`);
     $done({});
     return;
   }
@@ -57,12 +57,16 @@ Surge MITM script
     .trim()
     .toLowerCase();
 
+  console.log(`[force-effort-max] model=${model}`);
+
   if (!model.endsWith("-xhigh")) {
+    console.log("[force-effort-max] skip: model not xhigh");
     $done({});
     return;
   }
+
   data.model = model.replace(/-xhigh$/, "");
-  console.log(`replace ${model} to ${data.model}`)
+  console.log(`[force-effort-max] replace ${model} to ${data.model}`);
 
   if (
     !data.output_config ||
@@ -73,16 +77,22 @@ Surge MITM script
   }
 
   const old = data.output_config.effort;
+
   if (old !== "max") {
     data.output_config.effort = "max";
+
+    const body = JSON.stringify(data);
+
     console.log(
-      `forced output_config.effort=max for model=${model}, old=${JSON.stringify(old)}`,
+      `[force-effort-max] changed output_config.effort: ${JSON.stringify(old)} -> max`,
     );
 
     $done({
-      body: JSON.stringify(data),
+      body,
     });
     return;
   }
+
+  console.log("[force-effort-max] already max");
   $done({});
 })();
