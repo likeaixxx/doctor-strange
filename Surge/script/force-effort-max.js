@@ -72,9 +72,6 @@
     return;
   }
 
-  data.model = model.replace(/-xhigh$/, "");
-  console.log(`[force-effort-max] replace ${model} to ${data.model}`);
-
   if (
     !data.output_config ||
     typeof data.output_config !== "object" ||
