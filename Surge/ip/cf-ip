@@ -2,19 +2,19 @@
 [General]
 
 [Host]
-vws.aiquan.fun = 104.16.163.141
-vws1.aiquan.fun = 104.16.163.141
-bark.likeai.online = 104.16.163.141
-frp.likeai.online = 104.16.163.141
-lyrics.likeai.online = 104.16.163.141
-quark.likeai.online = 104.16.163.141
-xui.likeai.online = 104.16.163.141
-sendf.aiquan.fun = 104.16.163.141
-xui.aiquan.fun = 104.16.163.141
-a1.aiquan.fun = 104.16.163.141
-c1.aiquan.fun = 104.16.163.141
-x1.aiquan.fun = 104.16.163.141
-cpa.aiquan.fun = 104.16.163.141
+vws.aiquan.fun = 104.21.233.64
+vws1.aiquan.fun = 104.21.233.64
+bark.likeai.online = 104.21.233.64
+frp.likeai.online = 104.21.233.64
+lyrics.likeai.online = 104.21.233.64
+quark.likeai.online = 104.21.233.64
+xui.likeai.online = 104.21.233.64
+sendf.aiquan.fun = 104.21.233.64
+xui.aiquan.fun = 104.21.233.64
+a1.aiquan.fun = 104.21.233.64
+c1.aiquan.fun = 104.21.233.64
+x1.aiquan.fun = 104.21.233.64
+cpa.aiquan.fun = 104.21.233.64
 
 [Rule]
 FINAL,DIRECT
