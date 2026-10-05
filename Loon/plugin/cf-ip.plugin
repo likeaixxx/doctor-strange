@@ -2,20 +2,20 @@
 #!desc = cf 优选ip
 
 [Host]
-vws.aiquan.fun = 104.17.143.11
-vws1.aiquan.fun = 104.17.143.11
+vws.aiquan.fun = 104.17.157.58
+vws1.aiquan.fun = 104.17.157.58
 
-bark.likeai.online = 104.17.143.11
-frp.likeai.online = 104.17.143.11
-lyrics.likeai.online = 104.17.143.11
-quark.likeai.online = 104.17.143.11
-xui.likeai.online = 104.17.143.11
+bark.likeai.online = 104.17.157.58
+frp.likeai.online = 104.17.157.58
+lyrics.likeai.online = 104.17.157.58
+quark.likeai.online = 104.17.157.58
+xui.likeai.online = 104.17.157.58
 
-sendf.aiquan.fun = 104.17.143.11
-xui.aiquan.fun = 104.17.143.11
+sendf.aiquan.fun = 104.17.157.58
+xui.aiquan.fun = 104.17.157.58
 
-a1.aiquan.fun = 104.17.143.11
-c1.aiquan.fun = 104.17.143.11
-x1.aiquan.fun = 104.17.143.11
+a1.aiquan.fun = 104.17.157.58
+c1.aiquan.fun = 104.17.157.58
+x1.aiquan.fun = 104.17.157.58
 
-cpa.aiquan.fun = 104.17.143.11
+cpa.aiquan.fun = 104.17.157.58
