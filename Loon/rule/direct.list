@@ -3,10 +3,6 @@
 # REPO: https://github.com/likeaixxx/doctor-strange
 # UPDATED: 2026-10-29 13:47:53.000
 
-PROCESS-NAME,tailscaled
-PROCESS-NAME,tailscale
-PROCESS-NAME,AnyDesk
-
 DOMAIN,cpa.likeai.online
 DOMAIN,dldir1v6.qq.com
 DOMAIN-SUFFIX,deeplx.org
