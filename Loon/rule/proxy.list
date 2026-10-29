@@ -1,0 +1,20 @@
+# NAME: Proxy
+# AUTHOR: likeai
+# REPO: https://github.com/likeaixxx/doctor-strange
+# UPDATED: 2026-10-29 13:47:53.000
+
+DOMAIN,tktube.com
+DOMAIN-SUFFIX,claudex.us.ci
+DOMAIN-SUFFIX,macked.app
+# rsshub
+DOMAIN-SUFFIX,feeded.xyz
+# 油叉
+DOMAIN-SUFFIX,greasyfork.org
+# diabrowser
+DOMAIN-SUFFIX,diabrowser.engineering
+DOMAIN-SUFFIX,diabrowser.com
+
+# docs.rs
+DOMAIN-SUFFIX,docs.rs
+# gradle
+DOMAIN-SUFFIX,gradle.org
