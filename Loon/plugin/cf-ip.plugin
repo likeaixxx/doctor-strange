@@ -1,5 +1,6 @@
 #!name = Loon cf best ip
 #!desc = cf 优选ip
+#!system = iOS,iPadOS,macOS
 
 [Host]
 vws.aiquan.fun = 104.17.129.99
